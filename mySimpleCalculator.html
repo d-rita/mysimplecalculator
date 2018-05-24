@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="mySimpleCalculator.css" /> <!--linking external stylesheet to html code--> 
+
+	<title>My Calculator Application</title>
+	<!--functions to add. subtract, multiply and divide input values-->
+	<script type="text/javascript">
+		function addValues(){
+ 			var a = parseInt(document.getElementById("myNumber1").value); //initialize a to the first value entered by user 
+ 			var b = parseInt(document.getElementById("myNumber2").value); //intialise b to the second value entered by user
+ 			var x = a + b; 
+ 			alert(x); //display the result
+ 		                    }
+ 		function subtractValues(){
+ 			var a = parseInt(document.getElementById("myNumber3").value);//initialize a to the first value entered by user 
+ 			var b = parseInt(document.getElementById("myNumber4").value); //intialise b to the second value entered by user
+ 			var x = a - b; 
+ 			alert(x); //display the result
+ 		                         }
+ 		function multiplyValues(){
+ 			var a = parseInt(document.getElementById("myNumber5").value); //initialize a to the first value entered by user 
+ 			var b = parseInt(document.getElementById("myNumber6").value); //intialise b to the second value entered by user
+ 			var x = a * b; 
+ 			alert(x); //display the result
+ 		                    }
+ 		function divideValues(){
+ 			var a = parseInt(document.getElementById("myNumber7").value); //initialize a to the first value entered by user 
+ 			var b = parseInt(document.getElementById("myNumber8").value); //intialise b to the second value entered by user
+ 			var x = a / b; 
+ 			alert(x); //display the result
+ 		                         }
+
+ 		</script>
+</head>
+
+<body>
+<h1>My Calculator Application</h1>
+   <div class="container">
+   	<!--text areas for the user to input values for adding as well as add button--> 
+	<input type="number" id="myNumber1"> + <input type="number" id="myNumber2"> 
+    <button class = "button" name="Add" onclick="addValues()">Add</button>
+ 	<br>
+
+<!--text areas for the user to input values for subtracting as well as subtract button--> 
+ 	<input type="number" id="myNumber3"> - <input type="number" id="myNumber4">
+ 	<button class = "button button2" name="Subtract" onclick="subtractValues()">Subtract</button>
+ 	 <br>
+	
+	<!--text areas for the user to input values for multiplying as well as multiply button--> 
+   <input type="number" id="myNumber5"> * <input type="number" id="myNumber6"> 
+   <button class = "button button3" name="Multiply" onclick="multiplyValues()">Multiply</button>
+   <br>
+
+	<!--text areas for the user to input values for dividing as well as divide button--> 
+   <input type="number" id="myNumber7"> / <input type="number" id="myNumber8">
+   <button class = "button button4" name="Divide" onclick="divideValues()">Divide</button>
+   <br>
+
+   </div>
+    
+                 
+</body>
+</html>
